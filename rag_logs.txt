@@ -434,3 +434,193 @@ what is laptop policy ?
 2025-08-01 14:44:22,115 - INFO - Gemini LLM initialized successfully
 2025-08-01 15:09:58,735 - INFO - Gemini LLM initialized successfully
 2025-08-01 15:13:37,178 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:22:25,171 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:24:36,921 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:35:18,828 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:35:43,242 - INFO - Processing query with custom reranking: hello how are you
+2025-08-01 15:35:43,591 - INFO - Custom reranking applied for query: hello how are you
+2025-08-01 15:35:43,591 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:35:45,925 - INFO - Response: I don't have this information in the current HR policies. Please contact HR for assistance.
+2025-08-01 15:37:52,644 - INFO - Processing query with custom reranking: what is the fuel allowance policy
+2025-08-01 15:37:52,920 - INFO - Custom reranking applied for query: what is the fuel allowance policy
+2025-08-01 15:37:52,920 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:37:55,983 - INFO - Response: GenITeam Solutions provides a travel allowance that varies by employee grade. For G1-Officer, it is 7,000 PKR per month, and for G1-A Officer, it is 8,000 PKR per month. G2-Sr. Officers receive 14,000 PKR per month, while G3-Executives receive 20,000 PKR per month.
+2025-08-01 15:38:06,948 - INFO - Processing query with custom reranking: what is the fuel allowance policy
+2025-08-01 15:38:07,227 - INFO - Custom reranking applied for query: what is the fuel allowance policy
+2025-08-01 15:38:07,228 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:38:11,173 - INFO - Response: The fuel allowance, referred to as Travel Allowance, varies by employee grade. For example, a G1-Officer receives 7,000 PKR per month, while a G2-Sr. Officer receives 14,000 PKR per month. G3-Executives are allotted 20,000 PKR per month. The specific amount depends on the employee's assigned grade.
+2025-08-01 15:38:19,812 - INFO - Processing query with custom reranking: what is the fuel allowance policy for g5 officer
+2025-08-01 15:38:20,110 - INFO - Custom reranking applied for query: what is the fuel allowance policy for g5 officer
+2025-08-01 15:38:20,110 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:38:24,465 - INFO - Response: 
+2025-08-01 15:38:30,973 - INFO - Processing query with custom reranking: what is the fuel allowance policy for g5 officer
+2025-08-01 15:38:31,253 - INFO - Custom reranking applied for query: what is the fuel allowance policy for g5 officer
+2025-08-01 15:38:31,253 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:38:34,992 - INFO - Response: I don't have this information in the current HR policies for G5 officers. The provided incentive structure does not specify a fuel allowance for this grade. Please contact HR for assistance regarding this policy.
+2025-08-01 15:39:43,886 - INFO - Processing query with custom reranking: i am pregnant what is the policy
+2025-08-01 15:39:44,182 - INFO - Custom reranking applied for query: i am pregnant what is the policy
+2025-08-01 15:39:44,182 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:39:48,079 - INFO - Response: GenITeam Solutions covers maternity through Pak-Qatar Maternity Policy, requiring coverage during the 9-month cycle and spouse registration for eligibility. Female employees are eligible for 90 calendar days of paid maternity leave.
+2025-08-01 15:51:36,763 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:52:28,456 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:53:13,395 - INFO - Processing query with custom reranking: what are the health benefits i can take
+2025-08-01 15:53:13,698 - INFO - Custom reranking applied for query: what are the health benefits i can take
+2025-08-01 15:53:13,698 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:53:18,610 - INFO - Response: 
+2025-08-01 15:53:23,373 - INFO - Processing query with custom reranking: what are the health benefits i can take
+2025-08-01 15:53:23,652 - INFO - Custom reranking applied for query: what are the health benefits i can take
+2025-08-01 15:53:23,652 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:53:27,105 - INFO - Response: GenITeam Solutions provides health benefits including OPD treatment, health insurance, and maternity coverage. OPD covers medical expenses such as consultations, lab tests, child vaccinations, and prescribed medicines, with specific dental, dermatology, and optical inclusions. Health insurance and maternity benefits are provided, with coverage details varying based on employee grade.
+2025-08-01 15:55:08,908 - INFO - Processing query with custom reranking: what is the opd policy
+2025-08-01 15:55:09,194 - INFO - Custom reranking applied for query: what is the opd policy
+2025-08-01 15:55:09,194 - INFO - Retrieved 5 reranked chunks
+2025-08-01 15:55:12,680 - INFO - Response: All full-time/Permanent employees, their spouse, children, and parents living in Pakistan are covered by the OPD policy, but employees on probation cannot avail it. OPD treatment covers medical expenses including consultancies, investigations, lab tests, child mandatory vaccinations, and prescribed medicines for existing or pre-existing conditions. The reimbursement amount is 3% of the gross monthly salary, requiring prescriptions for most items, and claims must be submitted within the first 26 days of each month.
+2025-08-01 16:03:25,841 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:06:44,660 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:09:21,608 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:34:52,577 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:35:27,037 - INFO - Processing query with custom reranking: what is the fule allowance for g2 officer
+2025-08-01 16:35:27,342 - INFO - Custom reranking applied for query: what is the fule allowance for g2 officer
+2025-08-01 16:35:27,342 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:35:30,600 - INFO - Response: The travel allowance, which covers fuel, for a G2-Sr. Officer is 14,000 PKR per month.
+2025-08-01 16:36:57,259 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:37:28,645 - INFO - Processing query with custom reranking: jkgy
+2025-08-01 16:37:28,962 - INFO - Custom reranking applied for query: jkgy
+2025-08-01 16:37:28,962 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:37:30,573 - INFO - Response: I don't have this information in the current HR policies. Please contact HR for assistance.
+2025-08-01 16:37:47,535 - INFO - Processing query with custom reranking: what is sex policy
+2025-08-01 16:37:47,815 - INFO - Custom reranking applied for query: what is sex policy
+2025-08-01 16:37:47,815 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:37:53,295 - INFO - Response: GenITeam Solutions provides Maternity Medical Coverage through Pak-Qatar Maternity Policy. Employees must be covered during the 9-month maternity cycle, and pre-existing conditions are not entertained. Employees need to register spouses for eligibility. Coverage limits for normal and complicated deliveries vary by plan based on employee grade.
+2025-08-01 16:40:14,235 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:40:14,235 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:40:21,726 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:40:21,726 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:40:27,202 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:40:54,541 - INFO - Processing query with custom reranking: hello how are you
+2025-08-01 16:40:54,868 - INFO - Custom reranking applied for query: hello how are you
+2025-08-01 16:40:54,868 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:40:56,751 - INFO - Response: I don't have this information in the current HR policies. Please contact HR for assistance.
+2025-08-01 16:41:12,901 - INFO - Processing query with custom reranking: what is the leave policy
+2025-08-01 16:41:13,152 - INFO - Custom reranking applied for query: what is the leave policy
+2025-08-01 16:41:13,152 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:41:17,870 - INFO - Response: 
+2025-08-01 16:41:25,430 - INFO - Processing query with custom reranking: what is leave policy
+2025-08-01 16:41:25,679 - INFO - Custom reranking applied for query: what is leave policy
+2025-08-01 16:41:25,679 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:41:30,218 - INFO - Response: GenITeam offers various paid leave types including Annual, Casual, Compensatory, Maternity, and Paternity Leaves. Annual leave must be pre-planned one month in advance and cannot be combined with other leaves. Casual leaves are 8 per year, cannot be carried forward, and are generally limited to two days at a time. Compensatory leave is granted for working a minimum of 8 hours on off-days with prior approval.
+2025-08-01 16:42:02,688 - INFO - Processing query with custom reranking: can sick leaves carried forward
+2025-08-01 16:42:02,975 - INFO - Custom reranking applied for query: can sick leaves carried forward
+2025-08-01 16:42:02,975 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:42:07,593 - INFO - Response: 
+2025-08-01 16:42:14,735 - INFO - Processing query with custom reranking: can sick leaves carried forward
+2025-08-01 16:42:15,009 - INFO - Custom reranking applied for query: can sick leaves carried forward
+2025-08-01 16:42:15,009 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:42:19,541 - INFO - Response: 
+2025-08-01 16:42:28,016 - INFO - Processing query with custom reranking: can sick leave carried forward
+2025-08-01 16:42:28,325 - INFO - Custom reranking applied for query: can sick leave carried forward
+2025-08-01 16:42:28,325 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:42:32,700 - INFO - Response: 
+2025-08-01 16:42:41,746 - INFO - Processing query with custom reranking: can sick leaves carried forward
+2025-08-01 16:42:42,035 - INFO - Custom reranking applied for query: can sick leaves carried forward
+2025-08-01 16:42:42,035 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:42:46,866 - INFO - Response: 
+2025-08-01 16:42:58,514 - INFO - Processing query with custom reranking: can casual leaves carried forward
+2025-08-01 16:42:58,795 - INFO - Custom reranking applied for query: can casual leaves carried forward
+2025-08-01 16:42:58,795 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:42:59,964 - INFO - Response: Casual leaves cannot be accumulated and carried forward beyond the contract period or at the end of the calendar year. The un-availed casual leave balance will lapse automatically at the end of the calendar year and will not be en-cashed.
+2025-08-01 16:43:09,522 - INFO - Processing query with custom reranking: can sick leaves carried forward
+2025-08-01 16:43:09,803 - INFO - Custom reranking applied for query: can sick leaves carried forward
+2025-08-01 16:43:09,803 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:43:14,645 - INFO - Response: 
+2025-08-01 16:47:54,989 - INFO - Processing query with custom reranking: can sick leaves carried forward
+2025-08-01 16:47:55,270 - INFO - Custom reranking applied for query: can sick leaves carried forward
+2025-08-01 16:47:55,270 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:48:00,321 - INFO - Response: 
+2025-08-01 16:48:01,204 - INFO - Processing query with custom reranking: can casual leaves carried forward
+2025-08-01 16:48:01,502 - INFO - Custom reranking applied for query: can casual leaves carried forward
+2025-08-01 16:48:01,503 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:48:02,772 - INFO - Processing query with custom reranking: can casual leaves carried forward
+2025-08-01 16:48:02,847 - INFO - Response: Casual leaves cannot be accumulated and carried forward beyond the contract period or at the end of the calendar year. The un-availed casual leave balance will lapse automatically at the end of the calendar year and will not be en-cashed.
+2025-08-01 16:48:03,246 - INFO - Custom reranking applied for query: can casual leaves carried forward
+2025-08-01 16:48:03,246 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:48:04,477 - INFO - Response: Casual leaves cannot be accumulated and carried forward beyond the contract period or at the end of the calendar year. Un-availed casual leave balances will lapse automatically at the end of the calendar year and will not be en-cashed.
+2025-08-01 16:49:48,027 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:49:48,027 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:49:55,468 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:49:55,468 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:50:00,540 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:50:29,270 - INFO - Processing query with custom reranking: can sick leaves be carried forward
+2025-08-01 16:50:29,557 - INFO - Custom reranking applied for query: can sick leaves be carried forward
+2025-08-01 16:50:29,557 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:50:35,169 - INFO - Response: 
+2025-08-01 16:50:35,169 - INFO - Processing query with custom reranking: can sick leaves be carried forward
+2025-08-01 16:50:35,449 - INFO - Custom reranking applied for query: can sick leaves be carried forward
+2025-08-01 16:50:35,449 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:50:40,107 - INFO - Response: 
+2025-08-01 16:53:45,734 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:53:46,004 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:53:46,004 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:53:48,828 - INFO - Response: Un-availed sick leaves shall not be en-cashed. The policy does not state that sick leaves can be carried forward.
+2025-08-01 16:54:04,999 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:54:04,999 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:54:12,690 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:54:12,690 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:54:17,801 - INFO - Gemini LLM initialized successfully
+2025-08-01 16:54:46,566 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:54:46,849 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:54:46,849 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:54:52,292 - INFO - Response: 
+2025-08-01 16:54:52,292 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:54:52,571 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:54:52,571 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:54:57,653 - INFO - Response: 
+2025-08-01 16:55:05,863 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:55:06,151 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:55:06,152 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:55:11,314 - INFO - Response: 
+2025-08-01 16:55:11,314 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:55:11,581 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:55:11,582 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:55:16,451 - INFO - Response: 
+2025-08-01 16:55:33,495 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:55:33,766 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:55:33,766 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:55:38,818 - INFO - Response: 
+2025-08-01 16:55:38,818 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:55:39,090 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:55:39,090 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:55:44,314 - INFO - Response: 
+2025-08-01 16:56:20,952 - INFO - Processing query with custom reranking: can casual leaves carry forward
+2025-08-01 16:56:21,246 - INFO - Custom reranking applied for query: can casual leaves carry forward
+2025-08-01 16:56:21,246 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:56:22,769 - INFO - Response: Casual leaves cannot be accumulated or carried forward beyond the contract period or at the end of the calendar year. Any un-availed casual leave balance will automatically lapse at the end of the calendar year and will not be en-cashed.
+2025-08-01 16:56:28,601 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:56:28,885 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:56:28,885 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:56:34,787 - INFO - Response: 
+2025-08-01 16:56:34,788 - INFO - Processing query with custom reranking: can sick leaves be carried forward ?
+2025-08-01 16:56:35,098 - INFO - Custom reranking applied for query: can sick leaves be carried forward ?
+2025-08-01 16:56:35,098 - INFO - Retrieved 5 reranked chunks
+2025-08-01 16:56:40,036 - INFO - Response: 
+2025-08-01 16:59:44,797 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:59:44,797 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:59:51,734 - INFO - Use pytorch device_name: cpu
+2025-08-01 16:59:51,734 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 16:59:57,050 - INFO - Gemini LLM initialized successfully
+2025-08-01 17:00:19,199 - INFO - Processing query with custom reranking: can sick leaves carried forward ?
+2025-08-01 17:00:19,491 - INFO - Custom reranking applied for query: can sick leaves carried forward ?
+2025-08-01 17:00:19,491 - INFO - Retrieved 5 reranked chunks
+2025-08-01 17:00:24,397 - INFO - Response: 
+2025-08-01 17:00:24,397 - INFO - Processing query with custom reranking: can sick leaves carried forward ?
+2025-08-01 17:00:24,673 - INFO - Custom reranking applied for query: can sick leaves carried forward ?
+2025-08-01 17:00:24,673 - INFO - Retrieved 5 reranked chunks
+2025-08-01 17:00:29,406 - INFO - Response: 
+2025-08-01 17:00:36,694 - INFO - Processing query with custom reranking: can sick leaves carried forward
+2025-08-01 17:00:36,983 - INFO - Custom reranking applied for query: can sick leaves carried forward
+2025-08-01 17:00:36,983 - INFO - Retrieved 5 reranked chunks
+2025-08-01 17:00:41,793 - INFO - Response: 
+2025-08-01 17:00:41,793 - INFO - Processing query with custom reranking: can sick leaves carried forward
+2025-08-01 17:00:42,074 - INFO - Custom reranking applied for query: can sick leaves carried forward
+2025-08-01 17:00:42,074 - INFO - Retrieved 5 reranked chunks
+2025-08-01 17:00:46,696 - INFO - Response: 

@@ -62,6 +62,8 @@ class StreamlitHRAssistant:
             st.session_state.system_initialized = False
         if 'login_attempts' not in st.session_state:
             st.session_state.login_attempts = 0
+        if 'chat_history' not in st.session_state:
+            st.session_state.chat_history = []
 
     def initialize_system(self):
         if st.session_state.system_initialized:
@@ -155,14 +157,9 @@ class StreamlitHRAssistant:
             leave_balance = st.session_state.user.get('remaining_leaves', 'N/A')
             total_allotted = st.session_state.user.get('total_leaves', 30)  # default = 30
 
-           # st.markdown(
-            #    f"<div class='balance-box leave-balance'>{leave_balance} Days Remaining</div>",
-             #   unsafe_allow_html=True
-            #)
-            #st.markdown(
-             #   f"<div class='balance-box total-balance'>{total_allotted} Days Allotted</div>",
-              #  unsafe_allow_html=True
-            #)
+            # Optional: Display balances
+            # st.markdown(f"<div class='balance-box leave-balance'>{leave_balance} Days Remaining</div>", unsafe_allow_html=True)
+            # st.markdown(f"<div class='balance-box total-balance'>{total_allotted} Days Allotted</div>", unsafe_allow_html=True)
 
             st.markdown("### ℹ️ Quick Help")
             st.markdown("""
@@ -172,38 +169,30 @@ class StreamlitHRAssistant:
             - Explain company benefits
             """)
 
-        # Only Chat Tab now
         self.chat_interface()
 
     def chat_interface(self):
         st.markdown("### 💬 Ask HR Questions")
         st.markdown("Ask me anything about HR policies, benefits, or company procedures!")
 
-        if 'chat_history' not in st.session_state:
-            st.session_state.chat_history = []
-
+        # Show chat history using st.chat_message
         for question, answer in st.session_state.chat_history:
-            with st.container():
-                st.markdown(f"**🧑 You:** {question}")
-                st.markdown(f"**🤖 Assistant:** {answer}")
-                st.divider()
+            with st.chat_message("user"):
+                st.markdown(question)
+            with st.chat_message("assistant"):
+                st.markdown(answer)
 
-        with st.form("chat_form"):
-            user_query = st.text_area(
-                "Your Question:",
-                placeholder="e.g., What is the leave policy?",
-                height=100
-            )
-            submit_chat = st.form_submit_button("Ask Question", use_container_width=True)
+        # Chat input (auto-submits on Enter + clears input after submit)
+        user_query = st.chat_input("Ask your HR question here...")
 
-            if submit_chat and user_query:
-                with st.spinner("Processing your question..."):
-                    try:
-                        response = st.session_state.query_handler.handle_query(user_query)
-                        st.session_state.chat_history.append((user_query, response))
-                        st.rerun()
-                    except Exception as e:
-                        st.error(f"Error: {str(e)}")
+        if user_query:
+            with st.spinner("Processing your question..."):
+                try:
+                    response = st.session_state.query_handler.handle_query(user_query)
+                    st.session_state.chat_history.append((user_query, response))
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Error: {str(e)}")
 
     def logout(self):
         for key in list(st.session_state.keys()):

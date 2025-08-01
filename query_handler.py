@@ -6,7 +6,7 @@ class QueryHandler:
         self.user = authenticated_user
         self.rag_system = rag_system
         self.authenticator = authenticator
-        self.hr_contact = "hr@example.com"
+        self.hr_contact = "hr@geniteam.com"
 
     def _refresh_user_data(self):
         """Refresh user data from Google Sheets"""
@@ -33,7 +33,20 @@ class QueryHandler:
         # Otherwise: treat it as a semantic HR policy query
         try:
             response = self.rag_system.query_policy(query)
+
+            # Retry once if empty/null
+            if not response or not response.strip():
+                response = self.rag_system.query_policy(query)
+
+            # If still nothing, return fallback message
+            if not response or not response.strip():
+                return (
+                    "I couldn’t find a clear answer to your question. "
+                    f"Please contact HR at {self.hr_contact} for help."
+                )
+
             return self._refine_policy_response(response)
+
         except Exception as e:
             return f"⚠️ Sorry, there was an error handling your question: {str(e)}"
 
@@ -50,11 +63,14 @@ class QueryHandler:
             # Apply for leave
             success = self.authenticator.apply_for_leave(self.user['username'], days)
             if success:
-                # Refresh user data after successful application
                 self._refresh_user_data()
-                return (f"✅ Leave application for {days} days submitted successfully!\n"
-                        f"Remaining leaves: {self.user['remaining_leaves']}\n"
-                        f"Status: Pending approval")
+                return (
+                    f"✅ Leave application for {days} days submitted successfully!\n"
+                    f"Remaining leaves: {self.user['remaining_leaves']}\n"
+                    f"Status: Pending approval"
+                )
+            else:
+                return "❌ Leave application failed. Please try again or contact HR."
         except ValueError as e:
             return f"❌ {str(e)}"
         except Exception as e:
@@ -70,20 +86,31 @@ class QueryHandler:
             response = self.rag_system.query_policy(query)
             return self._refine_policy_response(response)
 
-    def _refine_policy_response(self, response: str) -> str:
+    def _refine_policy_response(self, response: Optional[str]) -> str:
         """Refine policy responses with user-specific info"""
+        if not response or not response.strip():
+            return (
+                "I couldn’t find a clear answer to your question. "
+                f"Please contact HR at {self.hr_contact} for help."
+            )
+
         if "leave" in response.lower() and "remaining_leaves" in self.user:
             response += f"\n\nYour current leave balance: {self.user['remaining_leaves']} days"
-        return response
+
+        return response.strip()
 
     def _handle_unrelated_hr_query(self, query: str) -> str:
         """Handle HR queries not directly related to leave policies"""
-        return (f"For questions about benefits and perks, please contact HR at {self.hr_contact}.\n"
-                "I can help with leave policies and applications.")
+        return (
+            f"For questions about benefits and perks, please contact HR at {self.hr_contact}.\n"
+            "I can help with leave policies and applications."
+        )
 
     def _get_default_response(self) -> str:
         """Default response for unrecognized queries"""
-        return ("I'm not sure I understand your question. I can help with:\n"
-                "- Leave applications and balances\n"
-                "- HR policy questions\n"
-                "Try rephrasing your question or contact HR for more complex queries.")
+        return (
+            "I'm not sure I understand your question. I can help with:\n"
+            "- Leave applications and balances\n"
+            "- HR policy questions\n"
+            "Try rephrasing your question or contact HR for more complex queries."
+        )

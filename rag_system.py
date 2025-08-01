@@ -68,7 +68,7 @@ Question: {question}
 ## 🔒 STRICT INSTRUCTIONS FOR RESPONDING:
 
 1. **EXTREME CONCISENESS REQUIRED**:
-   - Limit your answer to **2–4 plain sentences maximum**.
+   - Limit your answer to **2-4 plain sentences maximum**.
    - **Do not use bullets, numbering, or markdown formatting.**
    - Provide only the direct answer — avoid pleasantries, summaries, or restatements of the question.
 
@@ -90,7 +90,7 @@ Question: {question}
    If the context contains long or multi-part explanations, **extract and summarize only the parts directly answering the question**. Skip surrounding or unrelated content.
 
 5. **NO INFERRED OR EXTERNAL INFORMATION**:
-   Never guess, infer, or fabricate. Stick strictly to what’s explicitly stated in the context or via synonym mapping.
+   Never guess, infer, or fabricate. Stick strictly to whats explicitly stated in the context or via synonym mapping.
 
 6. **NO IRRELEVANT DETAILS**:
    Avoid any content that does not directly answer the question. Your job is to filter out noise.
