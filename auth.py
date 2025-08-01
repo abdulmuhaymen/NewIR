@@ -1,9 +1,9 @@
 from typing import Optional, Dict
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-from gspread.exceptions import APIError
 from datetime import datetime
+import gspread
+from gspread.exceptions import APIError
 from google.oauth2.service_account import Credentials
+import streamlit as st
 
 
 class Authenticator:
@@ -15,14 +15,14 @@ class Authenticator:
         self.worksheet = None
 
     def _connect_to_google_sheets(self):
-        """Establish connection to Google Sheets"""
+        """Establish connection to Google Sheets using Streamlit secrets"""
         try:
             scope = [
                 'https://spreadsheets.google.com/feeds',
                 'https://www.googleapis.com/auth/drive'
             ]
-            creds = Credentials.from_service_account_file(
-                self.config.CREDENTIALS_PATH,
+            creds = Credentials.from_service_account_info(
+                st.secrets["google_service_account"],
                 scopes=scope
             )
             client = gspread.authorize(creds)
@@ -39,10 +39,8 @@ class Authenticator:
                 raise Exception("Could not connect to Google Sheets")
 
             data = self.worksheet.get_all_records()
-            
             if not data:
                 raise ValueError("No data found in Google Sheet")
-            
             self.user_data = data
         except APIError as e:
             raise Exception(f"Google Sheets API error: {str(e)}")
@@ -52,9 +50,7 @@ class Authenticator:
     def authenticate(self, username: str, password: str) -> bool:
         """Authenticate user credentials with real-time Google Sheets check"""
         try:
-            # Refresh data before authentication
             self.load_user_data()
-            
             password = int(password)
             for user in self.user_data:
                 if (user['username'].lower() == username.lower() and 
@@ -71,43 +67,24 @@ class Authenticator:
         """Get authenticated user data with real-time refresh"""
         try:
             if self.authenticated_user:
-                # Force a complete refresh of all data
                 self.load_user_data()
                 username = self.authenticated_user['username']
-                # Find the user in the freshly loaded data
                 for user in self.user_data:
                     if user['username'].lower() == username.lower():
-                        self.authenticated_user = user  # Update the cached user
+                        self.authenticated_user = user
                         return user
         except Exception as e:
             print(f"Error refreshing user data: {str(e)}")
         return None
-        """Get authenticated user data with real-time refresh"""
-        try:
-            if self.authenticated_user:
-                # Refresh data to get latest values
-                self.load_user_data()
-                username = self.authenticated_user['username']
-                for user in self.user_data:
-                    if user['username'].lower() == username.lower():
-                        return user
-        except Exception:
-            pass
-        return None         
 
     def apply_for_leave(self, username: str, days: float) -> bool:
         """Apply for leave and update Google Sheet"""
         try:
             self.load_user_data()
-            
-            # Find the user's row
             cell = self.worksheet.find(username.lower(), in_column=1)
             row = cell.row
-            
-            # Get current values
             remaining_leaves = float(self.worksheet.cell(row, 4).value)
-            
-            # Validate leave application
+
             if days <= 0:
                 raise ValueError("Leave days must be positive")
             if days < self.config.MIN_LEAVE_DAYS:
@@ -116,12 +93,10 @@ class Authenticator:
                 raise ValueError(f"Maximum leave is {self.config.MAX_LEAVE_DAYS} days")
             if days > remaining_leaves:
                 raise ValueError("Not enough remaining leaves")
-            
-            # Update the sheet
+
             new_remaining = remaining_leaves - days
             self.worksheet.update_cell(row, 4, new_remaining)
-            
-            # Add to leave history
+
             leave_history = self.sheet.worksheet("LeaveHistory") if "LeaveHistory" in [ws.title for ws in self.sheet.worksheets()] else self.sheet.add_worksheet(title="LeaveHistory", rows=100, cols=4)
             leave_history.append_row([
                 username,
@@ -129,7 +104,7 @@ class Authenticator:
                 datetime.now().strftime("%Y-%m-%d"),
                 "Pending Approval"
             ])
-            
+
             return True
         except Exception as e:
             raise Exception(f"Failed to apply for leave: {str(e)}")

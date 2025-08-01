@@ -426,3 +426,11 @@ what is laptop policy ?
 2025-08-01 13:13:01,629 - INFO - Response: Female employees are eligible for 90 calendar days of paid maternity leave. The company provides maternity medical coverage through Pak-Qatar Maternity Policy, which requires coverage during the 9-month cycle and registration of spouses for eligibility. Normal delivery limits are PKR 30,000 or PKR 50,000 per year, and complicated delivery limits are PKR 50,000 or PKR 70,000 per year, depending on your employee grade. Pre-existing conditions are not entertained for medical coverage.
 2025-08-01 13:15:24,767 - INFO - Gemini LLM initialized successfully
 2025-08-01 14:07:17,108 - INFO - Gemini LLM initialized successfully
+2025-08-01 14:43:43,670 - INFO - Use pytorch device_name: cpu
+2025-08-01 14:43:43,670 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 14:43:50,651 - INFO - Use pytorch device_name: cpu
+2025-08-01 14:43:50,652 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 14:43:56,382 - INFO - Gemini LLM initialized successfully
+2025-08-01 14:44:22,115 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:09:58,735 - INFO - Gemini LLM initialized successfully
+2025-08-01 15:13:37,178 - INFO - Gemini LLM initialized successfully
