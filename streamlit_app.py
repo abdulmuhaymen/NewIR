@@ -10,7 +10,7 @@ from query_handler import QueryHandler
 
 # Page configuration
 st.set_page_config(
-    page_title="HR Leave Policy Assistant",
+    page_title="HR Policy Assistant",
     page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -24,15 +24,23 @@ st.markdown("""
         color: #2E86AB;
         margin-bottom: 2rem;
     }
-    .leave-balance {
-        font-size: 1.5rem;
+    .balance-box {
+        font-size: 1.2rem;
         font-weight: bold;
-        color: #28a745;
         text-align: center;
-        padding: 1rem;
-        background-color: #f8f9fa;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
         border-radius: 0.5rem;
+    }
+    .leave-balance {
+        color: #28a745;
+        background-color: #f8f9fa;
         border: 2px solid #28a745;
+    }
+    .total-balance {
+        color: #0056b3;
+        background-color: #eef3fa;
+        border: 2px solid #007bff;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -84,7 +92,7 @@ class StreamlitHRAssistant:
             return False
 
     def login_page(self):
-        st.markdown("<h1 class='main-header'>🏢 HR Leave Policy Assistant</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 class='main-header'>🏢 HR Policy Assistant</h1>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center; color: #666;'>GenITeam Solutions</p>", unsafe_allow_html=True)
 
         if not self.initialize_system():
@@ -145,7 +153,16 @@ class StreamlitHRAssistant:
             st.markdown(f"**Username:** {st.session_state.user['username']}")
 
             leave_balance = st.session_state.user.get('remaining_leaves', 'N/A')
-            st.markdown(f"<div class='leave-balance'>{leave_balance} Days</div>", unsafe_allow_html=True)
+            total_allotted = st.session_state.user.get('total_leaves', 30)  # default = 30
+
+           # st.markdown(
+            #    f"<div class='balance-box leave-balance'>{leave_balance} Days Remaining</div>",
+             #   unsafe_allow_html=True
+            #)
+            #st.markdown(
+             #   f"<div class='balance-box total-balance'>{total_allotted} Days Allotted</div>",
+              #  unsafe_allow_html=True
+            #)
 
             st.markdown("### ℹ️ Quick Help")
             st.markdown("""
@@ -155,18 +172,8 @@ class StreamlitHRAssistant:
             - Explain company benefits
             """)
 
-        tab1, tab2, tab3 = st.tabs(["💬 Chat Assistant", "📝 Apply for Leave", "📋 My Info"])
-
-        with tab1:
-            self.chat_interface()
-
-        with tab2:
-            st.info("🛠️ Leave application form is currently disabled for maintenance.")
-            # self.leave_application_form()  ← Commented out
-
-        with tab3:
-            st.info("🛠️ User info section is currently disabled.")
-            # self.user_info_display()  ← Commented out
+        # Only Chat Tab now
+        self.chat_interface()
 
     def chat_interface(self):
         st.markdown("### 💬 Ask HR Questions")
