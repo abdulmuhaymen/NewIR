@@ -1,0 +1,428 @@
+2025-07-30 14:49:34,657 - INFO - Gemini LLM initialized successfully
+2025-07-30 14:51:24,250 - INFO - Processing query with custom reranking: what is the petrol allowance for g3 officer
+2025-07-30 14:51:26,963 - INFO - Response: The travel allowance for G3 Executives is 20,000 PKR per month.
+2025-07-30 14:51:41,404 - INFO - Processing query with custom reranking: can i take 6666 leaves
+2025-07-30 14:51:45,427 - INFO - Response: No, the company's HR policy specifies maximums for each leave type, such as 8 casual, 6 sick, and 10 annual leaves per year. Taking 6666 leaves is not permitted under these policies.
+2025-07-30 14:55:10,891 - INFO - Processing query with custom reranking: how much amount employee will get as fuel allowance as g2 officer
+2025-07-30 14:55:12,607 - INFO - Response: A G2 Sr. Officer will receive 14,000 PKR per month as travel allowance.
+2025-07-30 15:35:55,225 - INFO - Gemini LLM initialized successfully
+2025-07-30 15:36:58,448 - INFO - Gemini LLM initialized successfully
+2025-07-30 15:37:22,150 - INFO - Processing query with custom reranking: what is the fuel allowance policy for g2 officer
+2025-07-30 15:37:24,765 - INFO - Response: For a G2- Sr. Officer, the travel allowance, which covers fuel and other travel expenses, is 14,000 PKR per month. This is detailed under the Incentive Structure in the HR Policy Manual.
+2025-07-30 15:37:42,774 - INFO - Processing query with custom reranking: what is the fuel allowance for g5 officer
+2025-07-30 15:37:44,497 - INFO - Response: The travel allowance for a G5 Sr. Manager is 42,000 PKR per month. This covers expenses related to travel, including fuel.
+2025-07-30 15:38:06,112 - INFO - Processing query with custom reranking: can i take 6 leaves
+2025-07-30 15:38:10,506 - INFO - Response: You can take 6 days of Annual Leave. If you take 6 Casual Leaves, they will be treated as Annual Leaves. Six Sick Leaves require a medical certificate.
+2025-07-30 15:39:08,558 - INFO - Processing query with custom reranking: what is the termination policy
+2025-07-30 15:39:11,751 - INFO - Response: The company follows a streamlined termination process, beginning with verbal warnings for poor performance and official HR warnings via email for below-average performance, which may also change an employee's status to probation. Unsatisfactory performance during probation can lead to a termination letter. The company may terminate employment without notice or pay in lieu only in cases of established gross misconduct. Otherwise, confirmed employees receive one-month notice and probationary employees receive one-week notice, or pay in lieu.
+2025-07-30 15:39:52,566 - INFO - Processing query with custom reranking: what is the health insurance policy for g3 officer
+2025-07-30 15:39:54,402 - INFO - Response: For G3-Executives, the health insurance policy covers PKR 200,000 per year for Self, Spouse, and 2 Children.
+2025-07-30 15:40:18,982 - INFO - Processing query with custom reranking: what is the fuel allowance for associate software engineer
+2025-07-30 15:40:21,097 - INFO - Response: The travel allowance for an Associate Software Engineer, who is classified under Grade G1-Officer, is 7,000 PKR per month.
+2025-07-30 15:41:36,898 - INFO - Processing query with custom reranking: how many sick leaves in a year i can take
+2025-07-30 15:41:38,657 - INFO - Response: All employees are granted 6 sick leaves per year on a prorate basis.
+2025-07-30 15:42:04,102 - INFO - Processing query with custom reranking: how many sick leaves in a month can i take
+2025-07-30 15:42:05,819 - INFO - Response: All employees are granted 6 sick leaves per year on a prorate basis. The policy does not specify a monthly limit for sick leaves.
+2025-07-30 15:48:23,581 - INFO - Processing query with custom reranking: if my leaves are finished the what will be the procedure
+2025-07-30 15:48:25,696 - INFO - Response: If all entitled leaves have been exhausted, the Management at its sole discretion may allow leave without pay (full / half) for any period on a case-to-case basis.
+2025-07-30 16:16:41,971 - INFO - Gemini LLM initialized successfully
+2025-07-30 16:17:43,295 - INFO - Processing query with custom reranking: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:43,607 - INFO - Custom reranking applied for query: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:43,608 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:17:43,727 - INFO - Processing query with custom reranking: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:44,041 - INFO - Custom reranking applied for query: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:44,041 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:17:44,414 - INFO - Processing query with custom reranking: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:44,688 - INFO - Custom reranking applied for query: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:44,688 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:17:44,942 - INFO - Processing query with custom reranking: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:45,214 - INFO - Custom reranking applied for query: what is the fuel allowance for a g1 officer
+2025-07-30 16:17:45,214 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:17:45,914 - INFO - Response: The travel allowance for a G1 Officer is 7,000 PKR per month.
+2025-07-30 16:17:46,128 - INFO - Response: The travel allowance for a G1 Officer is 7,000 PKR per month.
+2025-07-30 16:17:46,311 - INFO - Response: The travel allowance for a G1 Officer is 7,000 PKR per month.
+2025-07-30 16:17:46,845 - INFO - Response: The travel allowance for a G1 Officer is 7,000 PKR per month.
+2025-07-30 16:18:34,243 - INFO - Use pytorch device_name: cpu
+2025-07-30 16:18:34,243 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 16:18:41,655 - INFO - Use pytorch device_name: cpu
+2025-07-30 16:18:41,655 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 16:18:47,149 - INFO - Gemini LLM initialized successfully
+2025-07-30 16:21:03,904 - INFO - Processing query with custom reranking: i want to apply annual leaves
+2025-07-30 16:21:04,180 - INFO - Custom reranking applied for query: i want to apply annual leaves
+2025-07-30 16:21:04,180 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:21:08,234 - INFO - Response: Annual leaves are for permanent full-time employees after one year of service and cannot be availed for less than three days at a time. They must always be pre-planned and approved by Management. Upon supervisor approval, the request will be sent to the HR Manager to adjust your leave balance.
+2025-07-30 16:23:15,914 - INFO - Processing query with custom reranking: i am expecting a son next month what is the policy for it by company
+2025-07-30 16:23:16,175 - INFO - Custom reranking applied for query: i am expecting a son next month what is the policy for it by company
+2025-07-30 16:23:16,175 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:23:21,225 - INFO - Response: 
+2025-07-30 16:23:32,845 - INFO - Processing query with custom reranking: i am expecting a son next month what is the policy for it by company
+2025-07-30 16:23:33,107 - INFO - Custom reranking applied for query: i am expecting a son next month what is the policy for it by company
+2025-07-30 16:23:33,107 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:23:38,565 - INFO - Response: 
+2025-07-30 16:23:47,614 - INFO - Use pytorch device_name: cpu
+2025-07-30 16:23:47,614 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 16:23:55,251 - INFO - Use pytorch device_name: cpu
+2025-07-30 16:23:55,251 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 16:24:00,581 - INFO - Gemini LLM initialized successfully
+2025-07-30 16:24:19,731 - INFO - Processing query with custom reranking: i am expecting a son next month what is the policy for it by company
+2025-07-30 16:24:20,003 - INFO - Custom reranking applied for query: i am expecting a son next month what is the policy for it by company
+2025-07-30 16:24:20,003 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:24:25,972 - INFO - Response: 
+2025-07-30 16:25:07,632 - INFO - Processing query with custom reranking: what is fuel allowance
+2025-07-30 16:25:07,891 - INFO - Custom reranking applied for query: what is fuel allowance
+2025-07-30 16:25:07,891 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:25:11,053 - INFO - Response: The HR policy manual refers to fuel allowance as Travel Allowance. The amount provided for Travel Allowance varies by employee grade, as detailed in the Incentive Structure.
+2025-07-30 16:25:24,215 - INFO - Processing query with custom reranking: what is fuel allowance for g2 officer
+2025-07-30 16:25:24,474 - INFO - Custom reranking applied for query: what is fuel allowance for g2 officer
+2025-07-30 16:25:24,474 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:25:26,136 - INFO - Response: The fuel allowance for a G2-Sr. Officer is 14,000 PKR per month, listed under Travel Allowance.
+2025-07-30 16:26:35,934 - INFO - Processing query with custom reranking: what is opd policy
+2025-07-30 16:26:36,226 - INFO - Custom reranking applied for query: what is opd policy
+2025-07-30 16:26:36,227 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:26:40,588 - INFO - Response: 
+2025-07-30 16:26:46,050 - INFO - Processing query with custom reranking: what is opd policy for g2
+2025-07-30 16:26:46,330 - INFO - Custom reranking applied for query: what is opd policy for g2
+2025-07-30 16:26:46,330 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:26:49,574 - INFO - Response: G2-Sr. Officers are eligible for OPD coverage, which includes medical expenses like consultancies, investigations, lab tests, child vaccinations, and prescribed medicines for existing and pre-existing conditions. The reimbursement amount is 3% of their gross monthly salary. Prescriptions are required for most reimbursements, and claims must be submitted within the first 26 days of each month.
+2025-07-30 16:30:09,824 - INFO - Processing query with custom reranking: what is the fuel allowance for a g1 officer
+2025-07-30 16:30:10,099 - INFO - Custom reranking applied for query: what is the fuel allowance for a g1 officer
+2025-07-30 16:30:10,099 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:30:12,952 - INFO - Response: The travel allowance for a G1 Officer is 7,000 PKR per month.
+2025-07-30 16:30:38,017 - INFO - Processing query with custom reranking: what is the termination policy of the company
+2025-07-30 16:30:38,308 - INFO - Custom reranking applied for query: what is the termination policy of the company
+2025-07-30 16:30:38,308 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:30:41,097 - INFO - Response: The company follows a streamlined termination process, beginning with verbal warnings for poor performance and official email warnings from HR for below-average performance, which may also change an employee's status to probation. Unsatisfactory performance during probation can lead to a termination letter. For gross misconduct, the company may terminate employment without notice or pay in lieu after an inquiry. For other reasons, confirmed employees receive one-month notice or pay in lieu, and probationary employees receive one-week notice or pay in lieu.
+2025-07-30 16:31:28,081 - INFO - Processing query with custom reranking: what is the maternity policy for g2
+2025-07-30 16:31:28,384 - INFO - Custom reranking applied for query: what is the maternity policy for g2
+2025-07-30 16:31:28,384 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:31:31,283 - INFO - Response: For G2 employees, the maternity medical coverage is PKR 50,000 for normal delivery and PKR 70,000 for complicated delivery, per married female per year up to age 45. Female employees are eligible for 90 calendar days of paid maternity leave. Employees must be covered during the 9-month maternity cycle, and spouses need to be registered for eligibility.
+2025-07-30 16:31:52,793 - INFO - Processing query with custom reranking: i wanna apply leave
+2025-07-30 16:31:53,065 - INFO - Custom reranking applied for query: i wanna apply leave
+2025-07-30 16:31:53,065 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:31:57,521 - INFO - Response: 
+2025-07-30 16:37:20,959 - INFO - Use pytorch device_name: cpu
+2025-07-30 16:37:20,959 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 16:37:27,778 - INFO - Use pytorch device_name: cpu
+2025-07-30 16:37:27,779 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 16:37:32,675 - INFO - Gemini LLM initialized successfully
+2025-07-30 16:38:43,674 - INFO - Processing query with custom reranking: how many leaves i have
+2025-07-30 16:38:44,031 - INFO - Custom reranking applied for query: how many leaves i have
+2025-07-30 16:38:44,031 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:38:45,469 - INFO - Response: This requires review of your personal employment record. Please schedule a meeting with HR.
+2025-07-30 16:39:11,957 - INFO - Processing query with custom reranking: what is my fuel allowance?
+2025-07-30 16:39:12,213 - INFO - Custom reranking applied for query: what is my fuel allowance?
+2025-07-30 16:39:12,213 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:39:14,747 - INFO - Response: Your fuel allowance, listed as Travel Allowance in the policy, varies by your employee grade. Please refer to the Incentive Structure table for the specific amount applicable to your grade.
+2025-07-30 16:39:30,452 - INFO - Processing query with custom reranking: what is my fuel allowance? my grade is g1
+2025-07-30 16:39:30,719 - INFO - Custom reranking applied for query: what is my fuel allowance? my grade is g1
+2025-07-30 16:39:30,719 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:39:32,542 - INFO - Response: Your travel allowance for grade G1-Officer is 7,000 PKR per month.
+2025-07-30 16:58:09,025 - INFO - Processing query with custom reranking: what are the company benefits policy
+2025-07-30 16:58:09,311 - INFO - Custom reranking applied for query: what are the company benefits policy
+2025-07-30 16:58:09,311 - INFO - Retrieved 5 reranked chunks
+2025-07-30 16:58:13,087 - INFO - Response: GenITeam Solutions provides Provident Fund, Medical Insurance, and OPD as company benefits. The Provident Fund involves fixed monthly contributions from both the employee and employer after probation, with employer contributions requiring at least one year of service. Medical Insurance and OPD cease upon resignation acceptance, though medical insurance during the notice period may be processed under special circumstances with management approval. Additionally, permanent employees are eligible for an interest-free loan, repayable within 12 months, subject to fund availability and approval.
+2025-07-30 17:07:50,476 - INFO - Processing query with custom reranking: what is the leave policy
+2025-07-30 17:07:50,726 - INFO - Custom reranking applied for query: what is the leave policy
+2025-07-30 17:07:50,726 - INFO - Retrieved 5 reranked chunks
+2025-07-30 17:07:55,771 - INFO - Response: 
+2025-07-30 17:08:02,274 - INFO - Processing query with custom reranking: what is the leave policy
+2025-07-30 17:08:02,537 - INFO - Custom reranking applied for query: what is the leave policy
+2025-07-30 17:08:02,537 - INFO - Retrieved 5 reranked chunks
+2025-07-30 17:08:07,120 - INFO - Response: 
+2025-07-30 17:08:18,211 - INFO - Processing query with custom reranking: what is the leave policy of the company
+2025-07-30 17:08:18,485 - INFO - Custom reranking applied for query: what is the leave policy of the company
+2025-07-30 17:08:18,485 - INFO - Retrieved 5 reranked chunks
+2025-07-30 17:08:23,300 - INFO - Response: 
+2025-07-30 17:10:40,999 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:10:40,999 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:10:49,858 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:10:49,858 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:10:54,827 - INFO - Gemini LLM initialized successfully
+2025-07-30 17:12:23,814 - INFO - Processing query with custom reranking: what is the fuel allowance for me
+2025-07-30 17:12:24,108 - INFO - Custom reranking applied for query: what is the fuel allowance for me
+2025-07-30 17:12:24,108 - INFO - Retrieved 5 reranked chunks
+2025-07-30 17:12:28,919 - INFO - Response: Your fuel allowance, referred to as Travel Allowance, varies by employee grade. The specific amount depends on your assigned grade within the company.
+2025-07-30 17:21:41,874 - INFO - Gemini LLM initialized successfully
+2025-07-30 17:22:04,368 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:22:04,368 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:22:11,407 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:22:11,407 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:22:19,109 - INFO - Gemini LLM initialized successfully
+2025-07-30 17:22:54,966 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:22:54,967 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:23:02,017 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:23:02,017 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:23:03,506 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:23:03,506 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:23:08,084 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:23:08,084 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:23:10,510 - INFO - Gemini LLM initialized successfully
+2025-07-30 17:23:10,889 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:23:10,889 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:23:15,225 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:23:15,225 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:23:17,258 - INFO - Gemini LLM initialized successfully
+2025-07-30 17:23:20,135 - INFO - Gemini LLM initialized successfully
+2025-07-30 17:25:36,135 - INFO - Processing query with custom reranking: what is the fuel allowance according to my grade
+2025-07-30 17:25:36,474 - INFO - Custom reranking applied for query: what is the fuel allowance according to my grade
+2025-07-30 17:25:36,474 - INFO - Retrieved 5 reranked chunks
+2025-07-30 17:25:41,950 - INFO - Response: 
+2025-07-30 17:33:02,715 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:33:02,715 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:33:10,426 - INFO - Use pytorch device_name: cpu
+2025-07-30 17:33:10,426 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 17:33:16,262 - INFO - Gemini LLM initialized successfully
+2025-07-30 18:33:50,370 - INFO - Use pytorch device_name: cpu
+2025-07-30 18:33:50,370 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 18:33:57,178 - INFO - Use pytorch device_name: cpu
+2025-07-30 18:33:57,179 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-30 18:34:02,525 - INFO - Gemini LLM initialized successfully
+2025-07-31 16:53:12,524 - INFO - Use pytorch device_name: cpu
+2025-07-31 16:53:12,525 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-31 16:53:19,742 - INFO - Use pytorch device_name: cpu
+2025-07-31 16:53:19,742 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-31 16:53:24,629 - INFO - Gemini LLM initialized successfully
+2025-07-31 16:54:10,104 - INFO - Use pytorch device_name: cpu
+2025-07-31 16:54:10,104 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-31 16:54:17,055 - INFO - Use pytorch device_name: cpu
+2025-07-31 16:54:17,055 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-31 16:54:22,278 - INFO - Gemini LLM initialized successfully
+2025-07-31 16:55:01,490 - INFO - Processing query with custom reranking: what is leavy policy?
+2025-07-31 16:55:01,777 - INFO - Custom reranking applied for query: what is leavy policy?
+2025-07-31 16:55:01,777 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:55:04,022 - INFO - Response: I am unable to find information regarding a "leavy policy" in the provided HR Policy Manual. According to the current HR policy, this policy is not available.
+2025-07-31 16:55:13,555 - INFO - Processing query with custom reranking: what is leave policy?
+2025-07-31 16:55:13,752 - INFO - Custom reranking applied for query: what is leave policy?
+2025-07-31 16:55:13,752 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:55:15,037 - INFO - Processing query with custom reranking: what is leave policy?
+2025-07-31 16:55:15,282 - INFO - Custom reranking applied for query: what is leave policy?
+2025-07-31 16:55:15,282 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:55:15,475 - INFO - Processing query with custom reranking: what is leave policy?
+2025-07-31 16:55:15,670 - INFO - Custom reranking applied for query: what is leave policy?
+2025-07-31 16:55:15,670 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:55:18,226 - INFO - Response: 
+2025-07-31 16:55:19,209 - INFO - Response: 
+2025-07-31 16:55:20,306 - INFO - Response: 
+2025-07-31 16:56:42,127 - INFO - Processing query with custom reranking: what is leave policy
+2025-07-31 16:56:42,401 - INFO - Custom reranking applied for query: what is leave policy
+2025-07-31 16:56:42,401 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:56:46,680 - INFO - Processing query with custom reranking: how to apply for leave?
+2025-07-31 16:56:46,944 - INFO - Custom reranking applied for query: how to apply for leave?
+2025-07-31 16:56:46,944 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:56:47,846 - INFO - Response: 
+2025-07-31 16:56:50,793 - INFO - Response: I don't have the specific procedure for applying for leave in the provided HR policies. Please contact HR for assistance.
+2025-07-31 16:56:59,572 - INFO - Processing query with custom reranking: what is travel allowance
+2025-07-31 16:56:59,900 - INFO - Custom reranking applied for query: what is travel allowance
+2025-07-31 16:56:59,900 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:57:03,220 - INFO - Response: Travel bookings must be made through the company’s official Travel Agent. Lodging expenses are arranged and paid for by the company when an employee travels on deputation or training. Local conveyance expenses from the airport to residence or hotel, and for official work while on duty, are paid at actuals with supporting bills. All expenses incurred in foreign exchange must also be supported by bills.
+2025-07-31 16:58:01,150 - INFO - Processing query with custom reranking: what is casual leave policy
+2025-07-31 16:58:01,422 - INFO - Custom reranking applied for query: what is casual leave policy
+2025-07-31 16:58:01,423 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:58:06,029 - INFO - Response: Casual leaves are granted for personal urgency, causality, important work, or emergencies. Employees receive 8 casual leaves per year on a prorate basis, which cannot be accumulated or carried forward and lapse at the end of the calendar year without encashment. Casual leave cannot be granted for more than two days at a time, and
+2025-07-31 16:58:21,335 - INFO - Processing query with custom reranking: what is the leave policy?
+2025-07-31 16:58:21,590 - INFO - Custom reranking applied for query: what is the leave policy?
+2025-07-31 16:58:21,591 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:58:21,655 - INFO - Processing query with custom reranking: what is the leave policy?
+2025-07-31 16:58:21,909 - INFO - Custom reranking applied for query: what is the leave policy?
+2025-07-31 16:58:21,909 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:58:25,774 - INFO - Response: 
+2025-07-31 16:58:26,521 - INFO - Response: 
+2025-07-31 16:58:54,194 - INFO - Processing query with custom reranking: what is the casual leave policy?
+2025-07-31 16:58:54,478 - INFO - Custom reranking applied for query: what is the casual leave policy?
+2025-07-31 16:58:54,478 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:58:57,421 - INFO - Response: Casual leaves are granted for personal urgency or emergencies, with employees receiving 8 per year on a prorate basis. These leaves cannot be accumulated, carried forward, or en-cashed, and lapse at the end of the calendar year. Casual leave shall not be granted for more than two days at a time. Late arrivals or unadjusted non-official time out of office can result in deductions from casual leave balance, or salary if no balance remains.
+2025-07-31 16:58:59,419 - INFO - Processing query with custom reranking: what is sick leave polcy
+2025-07-31 16:58:59,677 - INFO - Custom reranking applied for query: what is sick leave polcy
+2025-07-31 16:58:59,677 - INFO - Retrieved 5 reranked chunks
+2025-07-31 16:59:02,320 - INFO - Response: Employees are granted 6 sick leaves per year on a prorate basis for health issues preventing duty performance. Un-availed sick leaves cannot be en-cashed. A medical certificate from a Registered Medical Practitioner is required for sick leaves exceeding three days, and may be requested even for one day. Half-day sick leaves are permitted and deducted from the balance.
+2025-07-31 17:02:24,436 - INFO - Processing query with custom reranking: what is paternity leaves policy
+2025-07-31 17:02:24,700 - INFO - Custom reranking applied for query: what is paternity leaves policy
+2025-07-31 17:02:24,700 - INFO - Retrieved 5 reranked chunks
+2025-07-31 17:02:25,920 - INFO - Response: Male employees are eligible for 2 days of paid leave on account of paternity. This policy is outlined under the Maternity & Paternity Leaves section.
+2025-07-31 17:02:40,276 - INFO - Processing query with custom reranking: what is paternity leaves policy, explain me
+2025-07-31 17:02:40,537 - INFO - Custom reranking applied for query: what is paternity leaves policy, explain me
+2025-07-31 17:02:40,537 - INFO - Retrieved 5 reranked chunks
+2025-07-31 17:02:42,126 - INFO - Response: Male employees are eligible for 2 days of paid leave on account of paternity. This is covered under the Maternity & Paternity Leaves policy.
+2025-07-31 17:04:44,525 - INFO - Processing query with custom reranking: is my leave approved?
+2025-07-31 17:04:44,785 - INFO - Custom reranking applied for query: is my leave approved?
+2025-07-31 17:04:44,785 - INFO - Retrieved 5 reranked chunks
+2025-07-31 17:04:48,678 - INFO - Response: This requires review of your personal employment record. Please schedule a meeting with HR.
+2025-07-31 17:07:37,691 - INFO - Processing query with custom reranking: what is in email policy?
+2025-07-31 17:07:37,947 - INFO - Custom reranking applied for query: what is in email policy?
+2025-07-31 17:07:37,948 - INFO - Retrieved 5 reranked chunks
+2025-07-31 17:07:40,719 - INFO - Response: Email facilities are for formal business correspondence, with limited private use permitted if it does not interfere with work. Employees must maintain confidentiality and not send material that is defamatory, breaches copyright, or is prejudicial to GenITeam's standing. Email must also not contain gossip, offensive content, or material that is threatening or discriminatory. Excessive private use, impersonation, or unauthorized computer use is not allowed.
+2025-07-31 17:08:36,850 - INFO - Processing query with custom reranking: what is internship policy?
+2025-07-31 17:08:37,117 - INFO - Custom reranking applied for query: what is internship policy?
+2025-07-31 17:08:37,118 - INFO - Retrieved 5 reranked chunks
+2025-07-31 17:08:38,968 - INFO - Response: The GenITeam Solutions Internship Policy aims to provide motivated students with challenging tasks and exposure to technical learning in a professional environment. It also serves as an opportunity for students and fresh graduates to familiarize themselves with the organization, working methods, and corporate culture.
+2025-08-01 10:03:10,603 - INFO - Use pytorch device_name: cpu
+2025-08-01 10:03:10,603 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 10:03:19,062 - INFO - Use pytorch device_name: cpu
+2025-08-01 10:03:19,062 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 10:03:24,723 - INFO - Gemini LLM initialized successfully
+2025-08-01 10:15:42,193 - INFO - Use pytorch device_name: cpu
+2025-08-01 10:15:42,193 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 10:15:49,820 - INFO - Use pytorch device_name: cpu
+2025-08-01 10:15:49,820 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 10:15:51,951 - INFO - Use pytorch device_name: cpu
+2025-08-01 10:15:51,951 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 10:15:56,842 - INFO - Gemini LLM initialized successfully
+2025-08-01 10:15:59,184 - INFO - Use pytorch device_name: cpu
+2025-08-01 10:15:59,184 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 10:16:04,811 - INFO - Gemini LLM initialized successfully
+2025-08-01 10:17:35,789 - INFO - Processing query with custom reranking: wha i sthe maternitiy leave policy ?
+2025-08-01 10:17:36,080 - INFO - Custom reranking applied for query: wha i sthe maternitiy leave policy ?
+2025-08-01 10:17:36,080 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:17:38,474 - INFO - Response: Female employees are eligible for 90 calendar days of paid leave for maternity.
+2025-08-01 10:18:00,489 - INFO - Processing query with custom reranking: wha i sthe maternitiy leave policy ?
+2025-08-01 10:18:00,749 - INFO - Custom reranking applied for query: wha i sthe maternitiy leave policy ?
+2025-08-01 10:18:00,749 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:18:02,171 - INFO - Response: Female employees are eligible for 90 calendar days of paid leave for maternity.
+2025-08-01 10:20:02,163 - INFO - Processing query with custom reranking: late coming policy ?
+2025-08-01 10:20:02,437 - INFO - Custom reranking applied for query: late coming policy ?
+2025-08-01 10:20:02,438 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:20:05,741 - INFO - Response: Employees have a flexible time of 15 minutes until 09:15 AM for reporting, with exit time adjusted to complete daily or weekly hours, otherwise, it is deducted from Casual Leave. Coming late without notification after 09:15 AM is considered late. Four late comings result in a deduction of one day Casual Leave, but two late comings are exempted. If staff is late or unable to report, they must notify their immediate superior in time to avoid leave balance deductions.
+2025-08-01 10:23:02,413 - INFO - Processing query with custom reranking: late coming policy ?
+2025-08-01 10:23:02,682 - INFO - Custom reranking applied for query: late coming policy ?
+2025-08-01 10:23:02,683 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:23:05,728 - INFO - Response: Employees are allowed a flexible time of 15 minutes until 9:15 AM for reporting. Coming late without notification after this flexible time is considered late. Four late comings will result in a deduction of one day Casual Leave, with two late comings exempted. Staff must notify their immediate superior if late to avoid leave balance deductions.
+2025-08-01 10:23:18,668 - INFO - Processing query with custom reranking: is there any internet policy ?
+2025-08-01 10:23:18,930 - INFO - Custom reranking applied for query: is there any internet policy ?
+2025-08-01 10:23:18,930 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:23:20,736 - INFO - Response: Yes, GenITeam has an Internet Use Policy. The internet is provided for work, with limited private use permitted if it does not interfere with work or involve inappropriate sites. Management reserves the right to check for excessive or inappropriate private use.
+2025-08-01 10:26:51,630 - INFO - Processing query with custom reranking: what is geniteam's loan policy ?
+2025-08-01 10:26:51,896 - INFO - Custom reranking applied for query: what is geniteam's loan policy ?
+2025-08-01 10:26:51,896 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:26:54,531 - INFO - Response: All permanent employees are eligible for an interest-free loan, subject to fund availability and a genuine verifiable purpose. The maximum loan amount is determined by the company's grading and incentive structure, with higher amounts requiring CEO approval. Loans are repayable within 12 months through equal monthly salary deductions, starting the next month, or by another predefined mode.
+2025-08-01 10:27:24,654 - INFO - Processing query with custom reranking: what is geniteam's loan policy ?
+2025-08-01 10:27:24,919 - INFO - Custom reranking applied for query: what is geniteam's loan policy ?
+2025-08-01 10:27:24,919 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:27:26,949 - INFO - Response: GenITeam offers interest-free loans to all permanent employees for a genuine, verifiable purpose, subject to fund availability. The maximum loan amount is based on the company's grading and incentive structure, with higher amounts requiring CEO approval. Loans are repayable within 12 months through equal monthly salary deductions, starting the next month.
+2025-08-01 10:34:23,989 - INFO - Processing query with custom reranking: i am g2\u2010sr.officer. how much incentive do i will get here ?
+
+
+what is laptop policy ?
+2025-08-01 10:34:24,260 - INFO - Custom reranking applied for query: i am g2\u2010sr.officer. how much incentive do i will get here ?
+
+
+what is laptop policy ?
+2025-08-01 10:34:24,260 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:34:29,512 - INFO - Response: 
+2025-08-01 10:34:41,787 - INFO - Processing query with custom reranking: i am g2\u2010sr.officer. how much incentive do i will get here ?
+
+
+what is laptop policy ?
+2025-08-01 10:34:42,073 - INFO - Custom reranking applied for query: i am g2\u2010sr.officer. how much incentive do i will get here ?
+
+
+what is laptop policy ?
+2025-08-01 10:34:42,073 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:34:46,573 - INFO - Response: 
+2025-08-01 10:34:57,679 - INFO - Processing query with custom reranking: what is laptop policy ?
+2025-08-01 10:34:57,978 - INFO - Custom reranking applied for query: what is laptop policy ?
+2025-08-01 10:34:57,978 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:34:59,744 - INFO - Response: GenITeam Solutions provides laptops to staff for company-related business as a productivity tool, usable both inside and outside the company. These laptops remain company property. Staff are responsible for protecting laptops from damage and theft, and are monetarily liable for any damage or loss due to negligence. Junior staff require written permission from their manager or team lead to take laptops home.
+2025-08-01 10:35:17,565 - INFO - Processing query with custom reranking: what is laptop policy ? i am g2\u2010sr.officer. how much incentive do i will get here ?
+2025-08-01 10:35:17,858 - INFO - Custom reranking applied for query: what is laptop policy ? i am g2\u2010sr.officer. how much incentive do i will get here ?
+2025-08-01 10:35:17,858 - INFO - Retrieved 5 reranked chunks
+2025-08-01 10:35:22,464 - INFO - Response: 
+2025-08-01 11:01:45,098 - INFO - Use pytorch device_name: cpu
+2025-08-01 11:01:45,098 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 11:01:52,120 - INFO - Use pytorch device_name: cpu
+2025-08-01 11:01:52,120 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 11:01:58,286 - INFO - Gemini LLM initialized successfully
+2025-08-01 11:21:51,277 - INFO - Gemini LLM initialized successfully
+2025-08-01 11:22:33,430 - INFO - Processing query with custom reranking: what is the fuel allowance for g3 officer
+2025-08-01 11:22:36,410 - INFO - Response: The travel allowance for G3-Executives is 20,000 PKR per month. This is listed under the incentive structure.
+2025-08-01 11:25:36,479 - INFO - Processing query with custom reranking: what is the opd policy for g5 officer
+2025-08-01 11:25:40,445 - INFO - Response: The OPD policy for a G5 officer is a reimbursement of 3% of their gross monthly salary. This benefit covers all full-time and permanent employees, along with their spouse, children, and parents living in Pakistan. Employees cannot avail this opportunity during their probation period.
+2025-08-01 11:27:53,782 - INFO - Processing query with custom reranking: what is the intership policy
+2025-08-01 11:27:57,844 - INFO - Response: The GenITeam Solutions Internship Policy aims to provide students with challenging tasks and exposure to technical learning in a professional environment. Interns are expected to be punctual, complete work within specified timeframes, and adhere to working hours of 9:00 AM to 6:00 PM, including a one-hour lunch break. Termination may occur due to absence without intimation, unacceptable behavior, fraud, or breach of confidentiality. Upon completion, interns must return company property, and may be offered employment based on performance and behavior, receiving an internship certificate.
+2025-08-01 11:28:47,942 - INFO - Processing query with custom reranking: what if someone has to leave between the internship
+2025-08-01 11:28:52,399 - INFO - Response: I don't
+2025-08-01 11:57:24,782 - INFO - Gemini LLM initialized successfully
+2025-08-01 11:58:06,168 - INFO - Processing query with custom reranking: what is fuel allowance for g2 officer
+2025-08-01 11:58:08,309 - INFO - Response: The travel allowance for a G2-Sr. Officer is 14,000 PKR per month.
+2025-08-01 11:58:31,696 - INFO - Processing query with custom reranking: what is the opd policy for g5 officer
+2025-08-01 11:58:36,507 - INFO - Response: 
+2025-08-01 11:59:02,080 - INFO - Processing query with custom reranking: having a baby next month whats the policy
+2025-08-01 11:59:06,523 - INFO - Response: 
+2025-08-01 11:59:10,856 - INFO - Processing query with custom reranking: what is the opd policy for g5 officer
+2025-08-01 11:59:11,169 - INFO - Processing query with custom reranking: what is laptop policy ? i am g2\u2010sr.officer. how much incentive do i will get here ?
+2025-08-01 11:59:11,455 - INFO - Custom reranking applied for query: what is laptop policy ? i am g2\u2010sr.officer. how much incentive do i will get here ?
+2025-08-01 11:59:11,455 - INFO - Retrieved 5 reranked chunks
+2025-08-01 11:59:14,985 - INFO - Response: The OPD reimbursement for a G5 officer is 3% of their gross monthly salary. This benefit covers all full-time and permanent employees, along with their spouse, children, and parents living in Pakistan. Employees cannot avail this opportunity during their probation period.
+2025-08-01 11:59:16,434 - INFO - Response: GenITeam provides laptops for company-related business as productivity tools, which remain company property. Staff must protect laptops from damage and theft, and are monetarily responsible for negligence. Junior staff requires permission to take laptops home, and all software/hardware changes or problems must be handled by the Network Administrator. Laptops are not allowed for personal use. According to the current HR policy, information regarding incentives is not available.
+2025-08-01 11:59:42,280 - INFO - Processing query with custom reranking: i am expecting a baby next month whats the policy for this
+2025-08-01 11:59:46,340 - INFO - Response: Female employees are eligible for 90 calendar days of paid maternity leave. The company provides maternity medical coverage through Pak-Qatar Maternity Policy. Coverage limits for normal and complicated delivery vary by employee grade, and employees must be covered for 9 months, registering spouses for eligibility.
+2025-08-01 12:00:48,968 - INFO - Processing query with custom reranking: i am travelling to abroad whats the policy for this
+2025-08-01 12:00:55,689 - INFO - Response: Employees in technical groups may travel abroad for business needs and are expected to take up such assignments without hesitation. The company covers visa and travel arrangements, and accommodation is provided in a company apartment. Daily travel and food expenses are 80-100 AED, issued in cash from the Dubai Office. A comprehensive report must be submitted within seven working days of return.
+2025-08-01 12:02:24,192 - INFO - Processing query with custom reranking: how can i resign ?
+2025-08-01 12:02:29,344 - INFO - Response: 
+2025-08-01 12:02:36,112 - INFO - Processing query with custom reranking: how can i resign ?
+2025-08-01 12:02:40,824 - INFO - Response: 
+2025-08-01 12:02:42,353 - INFO - Processing query with custom reranking: how can i resign ?
+2025-08-01 12:02:46,103 - INFO - Response: All confirmed employees must give one-month notice, and probationary employees must give one-week notice, or pay in lieu of the notice period as specified in their appointment letter. The notice period becomes effective from the date of submission. Resignation acceptance is subject to repayment of any outstanding loan amount.
+2025-08-01 12:07:45,040 - INFO - Processing query with custom reranking: what is the opd policy for g2 officer
+2025-08-01 12:07:49,121 - INFO - Response: For a G2 Officer, the OPD reimbursement is 3% of their gross monthly salary. This policy covers full-time/permanent employees, their spouse, children, and parents living in Pakistan, excluding those on probation. It includes medical expenses such as consultancies, investigations, lab tests, child mandatory vaccinations, and prescribed medicines. Prescriptions are generally required for reimbursement, except for over-the-counter medicines.
+2025-08-01 12:08:03,872 - INFO - Processing query with custom reranking: what is the opd policy
+2025-08-01 12:08:07,259 - INFO - Response: The OPD policy covers all full-time/permanent employees, their spouse, children, and parents living in Pakistan, but not during probation. It includes medical expenses like consultancies, investigations, lab tests, child vaccinations, and prescribed medicines for existing or pre-existing conditions. The reimbursement amount is 3% of the employee's gross monthly salary, disbursed monthly if claims are submitted within the first 26 days.
+2025-08-01 12:11:38,137 - INFO - Processing query with custom reranking: what is the monthly insurance policy
+2025-08-01 12:11:42,798 - INFO - Response: 
+2025-08-01 12:11:45,344 - INFO - Processing query with custom reranking: what is the monthly insurance policy
+2025-08-01 12:11:50,264 - INFO - Response: 
+2025-08-01 12:11:52,473 - INFO - Processing query with custom reranking: what is the monthly insurance policy
+2025-08-01 12:11:57,499 - INFO - Response: 
+2025-08-01 12:12:08,377 - INFO - Processing query with custom reranking: what is the insurance policy
+2025-08-01 12:12:12,634 - INFO - Response: 
+2025-08-01 12:12:13,961 - INFO - Processing query with custom reranking: what is the insurance policy
+2025-08-01 12:12:18,272 - INFO - Response: 
+2025-08-01 12:12:23,023 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:12:23,023 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:12:29,597 - INFO - Processing query with custom reranking: what is the family insurance policy
+2025-08-01 12:12:30,288 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:12:30,288 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:12:31,948 - INFO - Response: GenITeam Solutions provides health insurance coverage for employees. Depending on the employee's grade, this coverage extends to Self+Spouse or Self+Spouse+2 Children. Maternity coverage is also provided for registered spouses.
+2025-08-01 12:12:35,641 - INFO - Gemini LLM initialized successfully
+2025-08-01 12:13:12,169 - INFO - Processing query with custom reranking: what is the insurance policy for g2 officer
+2025-08-01 12:13:14,509 - INFO - Response: For a G2 Sr. Officer, the health insurance coverage is PKR 150,000 per year for Self, Spouse, and 2 Children. Maternity coverage for G2 includes PKR 50,000 for normal delivery and PKR 70,000 for complicated delivery.
+2025-08-01 12:14:31,633 - INFO - Processing query with custom reranking: what is the insurance policy
+2025-08-01 12:14:36,551 - INFO - Response: GenITeam Solutions provides health insurance with annual limits that vary by employee grade, covering self, spouse, and children. Maternity medical coverage
+2025-08-01 12:16:53,691 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:16:53,691 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:17:00,631 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:17:00,631 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:17:05,513 - INFO - Gemini LLM initialized successfully
+2025-08-01 12:18:06,529 - INFO - Processing query with custom reranking: i am pregnant whats the policy for this
+2025-08-01 12:18:09,758 - INFO - Response: GenITeam Solutions covers maternity through Pak-Qatar Maternity Policy, requiring employees to be covered for the 9-month cycle and register spouses for eligibility. Female employees are eligible for 90 calendar days of paid maternity leave. Medical coverage limits for normal delivery range from PKR 30,000 to PKR 50,000 per year, and for complicated delivery from PKR 50,000 to PKR 70,000 per year, depending on the employee's grade plan. This coverage is for married females up to age 45.
+2025-08-01 12:18:52,447 - INFO - Processing query with custom reranking: what is my leave count?
+2025-08-01 12:18:52,722 - INFO - Custom reranking applied for query: what is my leave count?
+2025-08-01 12:18:52,722 - INFO - Retrieved 5 reranked chunks
+2025-08-01 12:18:58,032 - INFO - Response: 
+2025-08-01 12:19:41,652 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:19:41,652 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:19:49,112 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:19:49,112 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:19:54,742 - INFO - Gemini LLM initialized successfully
+2025-08-01 12:20:05,537 - INFO - Processing query with custom reranking: what is my leave count?
+2025-08-01 12:20:05,813 - INFO - Custom reranking applied for query: what is my leave count?
+2025-08-01 12:20:05,813 - INFO - Retrieved 5 reranked chunks
+2025-08-01 12:20:10,723 - INFO - Response: 
+2025-08-01 12:21:19,638 - INFO - Processing query with custom reranking: what is paternity leave policy over here?
+2025-08-01 12:21:19,906 - INFO - Custom reranking applied for query: what is paternity leave policy over here?
+2025-08-01 12:21:19,906 - INFO - Retrieved 5 reranked chunks
+2025-08-01 12:21:22,639 - INFO - Response: Male employees are eligible for 2 days of paid leave on account of paternity.
+2025-08-01 12:22:03,595 - INFO - Processing query with custom reranking: how do imbursements work?
+2025-08-01 12:22:03,858 - INFO - Custom reranking applied for query: how do imbursements work?
+2025-08-01 12:22:03,858 - INFO - Retrieved 5 reranked chunks
+2025-08-01 12:22:06,305 - INFO - Response: Employees are encouraged to pay medical costs from their own pocket. For reimbursement, they must provide original computerized payment receipts or bills, along with a copy of the prescription and supporting documents in hard form. The patient's name must be mentioned on these documents.
+2025-08-01 12:22:30,060 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:22:30,060 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:22:37,315 - INFO - Use pytorch device_name: cpu
+2025-08-01 12:22:37,315 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 12:22:43,412 - INFO - Gemini LLM initialized successfully
+2025-08-01 13:12:35,171 - INFO - Gemini LLM initialized successfully
+2025-08-01 13:12:56,420 - INFO - Processing query with custom reranking: i am pregnant whats the policy
+2025-08-01 13:13:01,629 - INFO - Response: Female employees are eligible for 90 calendar days of paid maternity leave. The company provides maternity medical coverage through Pak-Qatar Maternity Policy, which requires coverage during the 9-month cycle and registration of spouses for eligibility. Normal delivery limits are PKR 30,000 or PKR 50,000 per year, and complicated delivery limits are PKR 50,000 or PKR 70,000 per year, depending on your employee grade. Pre-existing conditions are not entertained for medical coverage.
+2025-08-01 13:15:24,767 - INFO - Gemini LLM initialized successfully
+2025-08-01 14:07:17,108 - INFO - Gemini LLM initialized successfully

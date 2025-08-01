@@ -1,0 +1,18 @@
+2025-07-24 16:21:36,249 - QUERY: want is fuel allowance for g1-a grade
+2025-07-24 16:22:14,343 - RESPONSE:  Based on the provided HR policies document, there is no mention of a specific fuel allowance for the G1-A grade officers. The incentive structure for this grade includes 3% of gross salary, health insurance, maternity fund, loan facility, car financing, and travel allowance. However, the details for the travel allowance are not specified in the provided context. Therefore, I'm unable to provide the exact amount for a fuel allowance for G1-A grade officers without more specific information.
+2025-07-24 16:24:24,905 - QUERY: what is my travel allowance?
+2025-07-24 16:25:08,740 - RESPONSE:  Based on the provided HR policies, there is no explicit mention of a fixed travel allowance for employees. However, the policy does state that lodging (accommodation expenses) shall be arranged and paid for by the company when an employee travels on deputation or training.
+
+Regarding your query about fuel allowance, the context does not provide specific information about it. If such a policy exists, it might not be included in the provided documents.
+
+To clarify any doubts or to get more detailed information, I would recommend checking with your HR department directly or referring to your employment contract if available.
+2025-07-24 16:26:01,800 - QUERY: what is my medical im g1-a
+2025-07-24 16:26:43,736 - RESPONSE:  Based on the provided HR policies, there is no specific information about medical coverage for the G1-A grade. However, the document does mention general medical coverage under the G1 Officer Associate 0-1 years category. For more detailed information about your specific medical coverage, I would recommend checking your personal employment records or contacting the HR department directly.
+
+Regarding your query about Fuel Allowance, it was not explicitly mentioned in the provided context. However, if travel is a part of your job responsibilities, you may want to check with your HR department for any travel-related allowances or policies that might include fuel costs.
+2025-07-24 16:29:20,512 - QUERY: what is my travel allowance in g1-a
+2025-07-24 16:30:18,156 - RESPONSE:  Based on the provided HR policies, an employee in the grade G1-A Officer is entitled to a travel allowance of 3% of their gross salary per year. However, the specific amount for G1-A Officer isn't explicitly mentioned in the context. The policies state that the travel allowance for G1-Officer is PKR 150,000/Year. Since G1-A Officer is a higher grade, it can be assumed that their travel allowance would be more than that of a G1-Officer. But without specific numbers, I cannot provide an exact amount.
+
+Regarding your question about fuel allowance, the HR policies do not mention any specific fuel allowance for any grades. So, I'm unable to provide information on that.
+2025-07-24 17:35:37,643 - Use pytorch device_name: cpu
+2025-07-24 17:35:37,675 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
