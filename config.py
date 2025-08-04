@@ -11,7 +11,7 @@ class Config:
     CREDENTIALS_PATH = "credentials.json"
     
     # Policy Document
-    POLICY_PDF_PATH = os.path.join(os.path.dirname(__file__), "hr_policies.pdf")
+    POLICY_PDF_PATH = os.path.join(os.path.dirname(__file__), "New_doc.txt")
     
     # Authentication
     MAX_LOGIN_ATTEMPTS = 3

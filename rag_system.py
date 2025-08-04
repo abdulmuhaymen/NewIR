@@ -5,27 +5,25 @@ from langchain_core.runnables import RunnablePassthrough
 import logging
 from typing import Optional
 
+
 class PolicyRAGSystem:
     def __init__(self, retriever, config, data_loader=None):
         self.retriever = retriever
-        self.data_loader = data_loader  # Add data_loader for custom reranking
+        self.data_loader = data_loader
         self.llm = None
         self.chain = None
         self.config = config
         self.llm_ready = False
 
-        # Configure logging
         logging.basicConfig(
             filename='rag_logs.txt',
             level=logging.INFO,
             format='%(asctime)s - %(levelname)s - %(message)s'
         )
 
-        # Initialize Gemini
         genai.configure(api_key=self.config.GEMINI_API_KEY)
 
     def initialize_llm(self) -> None:
-        """Initialize the Gemini model"""
         try:
             self.llm = genai.GenerativeModel(
                 model_name=self.config.GEMINI_MODEL,
@@ -41,39 +39,41 @@ class PolicyRAGSystem:
             raise Exception(f"Failed to initialize Gemini: {str(e)}")
 
     def custom_retriever(self, query):
-        """Custom retrieval function using explicit cosine similarity reranking"""
         if self.data_loader:
             reranked_chunks = self.data_loader.get_reranked_chunks(query, top_k=5)
             context = "\n\n".join([chunk.page_content for chunk in reranked_chunks])
-
             logging.info(f"Custom reranking applied for query: {query}")
             logging.info(f"Retrieved {len(reranked_chunks)} reranked chunks")
-
             return context
         else:
             docs = self.retriever.invoke(query)
             return "\n\n".join([doc.page_content for doc in docs])
 
     def setup_qa_chain(self) -> None:
-        """Set up the QA chain with Gemini and custom reranking"""
         if not self.llm_ready or self.retriever is None:
             raise Exception("LLM or retriever not initialized")
 
-        template = """You are a highly efficient and concise HR assistant for GenITeam Solutions. Your primary role is to answer employee questions about HR policies, strictly based on the company's official HR Policy Manual and User GRADE.
+        template = """You are a highly efficient and concise HR assistant for GenITeam Solutions.
+Your primary role is to answer employee questions about HR policies,
+strictly based on the company's official HR Policy Manual, the provided user's GRADE, and the query.
 
 Context: {context}
+
+User Grade: {grade}
 
 Question: {question}
 
 ## 🔒 STRICT INSTRUCTIONS FOR RESPONDING:
 
 1. **EXTREME CONCISENESS REQUIRED**:
-   - Limit your answer to **2-4 plain sentences maximum**.
+   - Limit your answer to **2–4 plain sentences maximum**.
    - **Do not use bullets, numbering, or markdown formatting.**
    - Provide only the direct answer — avoid pleasantries, summaries, or restatements of the question.
 
-2. **STRICTLY FROM CONTEXT**:
-   Your answer must only be based on the provided 'Context'. Do not bring in external sources, assumptions, or personal opinions.
+2. **STRICTLY FROM CONTEXT + USER GRADE**:
+   - Your response MUST consider the provided user grade.
+   - If the policy only applies to certain grades, explain that clearly.
+   - If not applicable to the user's grade, say so politely and briefly.
 
 3. **SYNONYM AND RELATED TERM IDENTIFICATION**:
    If the exact term from the question is not in the context, search for related terms and synonyms. For example:
@@ -85,12 +85,13 @@ Question: {question}
    - "gratuity", "retirement", "fund", "pension" → "Provident Fund"
    - "termination", "job end", "contract end" → "Resignation & Termination Policy"
    - "training bond", "skills clause", "non-compete" → "Non-Competing Technology"
+   - "leaves", "casual leave", "sick leave", "annual leave" → "Leave Policy"
 
 4. **TRIM DOWN EXCESSIVE DETAIL**:
    If the context contains long or multi-part explanations, **extract and summarize only the parts directly answering the question**. Skip surrounding or unrelated content.
 
 5. **NO INFERRED OR EXTERNAL INFORMATION**:
-   Never guess, infer, or fabricate. Stick strictly to whats explicitly stated in the context or via synonym mapping.
+   Never guess, infer, or fabricate. Stick strictly to what’s explicitly stated in the context or via synonym mapping.
 
 6. **NO IRRELEVANT DETAILS**:
    Avoid any content that does not directly answer the question. Your job is to filter out noise.
@@ -101,19 +102,36 @@ Question: {question}
    - If the situation involves exceptions or manager discretion: "This situation may require management approval. Let me connect you with the appropriate person."
    - If it's completely out of scope: "I don't have this information in the current HR policies. Please contact HR for assistance."
 
-Your answer must be accurate, minimal, natural-language, and based only on the provided context and synonym logic. If updates are mentioned in the context, reflect those accurately.
+8. **HANDLING RUDE OR ABUSIVE LANGUAGE**:
+   - If the user's question contains offensive, aggressive, or abusive language (e.g., insults, profanity), do not answer the question.
+   - Instead, respond with: "😕 Let's keep it respectful. I'm here to help you. Please relax and rephrase your question."
+
+9. **HANDLING FRIENDLY OR SMALL-TALK MESSAGES**:
+   - If the user asks how you are, compliments you, or says things like “love you”, “you're great”, “thank you”, etc., respond briefly and kindly.
+   - Example: “Thanks for the kind words! I'm here to help with HR policy questions — feel free to ask.”
+   - Always follow up with a gentle nudge to ask a policy-related question.
+
+10. **HANDLING IRRELEVANT OR RANDOM QUERIES**:
+   - If the user's query seems unrelated to HR policies (e.g., random facts, jokes, news, non-work topics), respond with:
+     "I'm here to help with HR policy-related questions. Please ask something related to your employment policies."
+
+Your answer must be accurate, minimal, and based only on the provided context and user grade.
 """
+
 
         prompt = ChatPromptTemplate.from_template(template)
 
         self.chain = (
-            {"context": lambda x: self.custom_retriever(x), "question": RunnablePassthrough()}
+            {
+                "context": lambda x: self.custom_retriever(x["question"]),
+                "question": lambda x: x["question"],
+                "grade": lambda x: x.get("grade", "Unknown")
+            }
             | prompt
             | self._invoke_gemini
         )
 
     def _invoke_gemini(self, prompt) -> str:
-        """Invoke Gemini with response summarization for overly long outputs"""
         try:
             prompt_str = prompt.to_string()
             response = self.llm.generate_content(
@@ -148,14 +166,16 @@ Your answer must be accurate, minimal, natural-language, and based only on the p
             logging.error(f"Gemini API error: {str(e)}")
             return f"Error processing your query: {str(e)}"
 
-    def query_policy(self, question: str) -> str:
-        """Query the policy document with Gemini and custom reranking"""
+    def query_policy(self, question: str, user_grade: Optional[str] = None) -> str:
         if not self.chain:
             return "System initializing, please wait..."
 
         try:
             logging.info(f"Processing query with custom reranking: {question}")
-            response = self.chain.invoke(question)
+            response = self.chain.invoke({
+                "question": question,
+                "grade": user_grade or "Unknown"
+            })
             logging.info(f"Response: {response}")
             return response
         except Exception as e:
